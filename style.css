@@ -1,0 +1,244 @@
+*{
+    font-family: Roboto, Arial;
+}
+body{
+    background-color: #FFFFFF;
+    padding-top: 60px;
+    padding-left: 100px;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: #FFFFFF;
+}
+.logo{
+    display: flex;
+    width: 250px;
+    align-items: center;
+}
+.search-box{
+    display:flex;
+    flex:1;
+    align-items: center;
+    margin-left: 70px;
+    margin-right: 35px;
+    max-width: 700px;
+}
+.inputsearch{
+    height: 34px;
+    flex: 1;
+    border-radius: 17px;
+    padding-left: 10px;
+    border:1px solid gray;
+    background-color: #EEEEEE;
+}
+.inputsearch:hover{
+    box-shadow: inset 1px 3px 3px rgba(96,96, 96, 0.15);
+    border-color: none;
+}
+.inputsearch::placeholder{
+    font-size: 15px;
+}
+.search-icon-box{
+    height: 30px;
+    width:35px;
+    border-radius: 17px;
+    border: none;
+    border-right: 1px solid gray;
+    background-color: #EEEEEE;
+    margin-left:-34px;
+}
+.microphone{
+    height: 35px;
+    width:35px;
+    border: none;
+    background-color: transparent;
+}
+.search-icon{
+    font-size: 16px;
+    color: black;
+    background-color: #EEEEEE;
+}
+.phone-icon{
+    font-size: 20px;
+    display:flex;
+    margin: 10px;
+    flex: 1;
+    color: black;
+}
+.phone-icon:hover{
+    color: rgb(163, 0, 0);
+}
+.login{
+    display:flex;
+    align-items: center;
+    width: 250px;
+    justify-content: space-around;
+    flex-shrink: 0;
+}
+.hambar{
+    display: flex;
+    font-size: 30px;
+    margin-left: 40px;
+    font-weight: 700;
+}
+.youtube-icon{
+    display: flex;
+    font-size: 30px;
+    margin-left: 20px;
+    color:  #FF0000 ;
+}
+.title{
+    margin-left: 5px;
+    vertical-align: top;
+    color:  #000000;
+}
+.user-icon{
+    display: flex;
+    font-size: 20px;
+    color: black;
+}
+.notify{
+    display: flex;
+    font-size: 20px;
+    color:  black;
+}
+.notification-container{
+    position: relative;
+}
+.count{
+    position: absolute;
+    top:5px;
+    right:-5px;
+    color:white;
+    font-size: 11px;
+    background-color: #bc0000;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 10px;
+}
+.video-icon{
+    display: flex;
+    font-size: 20px;
+    color:  black;
+}
+
+.sidebar{
+    position: fixed;
+    left:0;
+    top:78px;
+    bottom:0;
+    background-color: white;
+    width: 100px;
+    z-index: 200;
+}
+.sidebar-icons{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    height:80px
+}
+.sidebar-icons:hover{
+    background-color: rgb(189, 189, 189);
+}
+.sidebar-icons p{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.sidebar-icons div{
+    font-size: 15px;
+    font-weight: 500;
+}
+.all-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr  1fr  1fr;
+    column-gap:10px;
+    margin-left: 5px;
+}
+@media (max-width:540px){
+    .all-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (min-width: 992px){
+    .all-grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+@media (max-width:541px) and (min-width:991px){
+    .all-grid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+.container{
+    margin-top: 20px;
+    vertical-align: top;
+    display: inline-block;
+}
+.main-video{
+    position:relative;
+}
+.video-image{
+    width: 100%;
+   
+}
+.video-time{
+    position:absolute;
+    bottom: 10px;
+    right: 10px;
+    font-weight: 700;
+    font-size: 12px;
+    color: white;
+    background-color: black;
+    padding-left: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 5px;
+}
+.video-title{ 
+    margin-top: 8px;
+    margin-bottom: 0px;
+    font-weight: 700;
+    display: inline-block;
+}
+.channel{
+    margin-top: 8px;
+    margin-bottom: 0px;
+    color: rgb(96,96,96);
+}
+.views-year{
+    margin-top: 8px;
+    margin-bottom: 0px;
+    color: rgb(96,96,96);
+}
+.video-details{
+    display: inline-block;
+}
+.content{
+    display: inline-block;
+    width: 200px;
+    color: #000000;
+}
+
+.profilediv{
+    display: inline-block;
+    width: 50px;
+    vertical-align:top;
+    margin-top: 8px;
+}
+.profile{
+    width: 100%;
+    border-radius: 30px;
+}
+
